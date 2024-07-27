@@ -1,0 +1,29 @@
+body {
+    background-color: black; /* Change background to black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    overflow: hidden; /* Hide overflow to keep elements within the viewport */
+}
+
+#name {
+    display: flex;
+    gap: 1vw; /* Add some distance between the words */
+}
+
+#name span {
+    display: inline-block;
+    opacity: 0; /* Start with opacity 0 for the animation */
+    transform: translateY(0); /* Ensure initial transform state */
+    font-size: 5vw; /* Make the text responsive */
+    color: white; /* Change text color to white */
+}
+
+#name .dot {
+    position: relative;
+    top: -1vw; /* Adjust the position of the dot */
+    font-size: 2vw; /* Make the dot smaller */
+}
